@@ -1,0 +1,19 @@
+{
+	"name": "solid-template",
+	"main": "src",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+	},
+	"dependencies": {
+		"solid-js": "^1.7.11"
+	},
+	"devDependencies": {
+		"ts-config": "workspace:*",
+		"typescript": "^4.5.3"
+	}
+}

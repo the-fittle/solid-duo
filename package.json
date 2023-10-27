@@ -1,17 +1,25 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "eslint": "^8.48.0",
-    "prettier": "^3.0.3",
-    "tsconfig": "workspace:*",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@8.6.10",
-  "name": "solid-duo"
+	"name": "the-fittle",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "all things for solid.js",
+	"private": true,
+	"scripts": {
+		"build": "turbo build --filter=app",
+		"dev": "turbo dev --filter=app",
+		"clean": "turbo clean & ( rm -rf .turbo & rm -rf node_modules & rm -rf dist )",
+		"prune": "pnpm store prune"
+	},
+	"dependencies": {
+		"solid-js": "^1.8.4"
+	},
+	"devDependencies": {
+		"ts-config": "workspace:*",
+		"turbo": "latest",
+		"unocss": "^0.57.1",
+		"unocss-preset-theme": "^0.10.1",
+		"vite": "3.2.7",
+		"vite-plugin-solid": "2.7.0"
+	},
+	"packageManager": "pnpm@8.6.10"
 }

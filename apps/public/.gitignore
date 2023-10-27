@@ -8,7 +8,15 @@ node_modules
 *.pem
 
 # personal
+
+# ignore apps/app folder
 /apps/app
+
+
+
+# kobalte
+packages/core
+packages/utils
 
 # debug
 pnpm-debug.log*
